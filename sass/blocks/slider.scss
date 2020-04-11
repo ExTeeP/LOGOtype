@@ -1,0 +1,65 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.slider__slides {
+  @include list-reset;
+}
+
+.slider__slide {
+  min-height: 409px;
+  background: linear-gradient(to left, $color-gradient__main 30%, $color-gradient__second 65%);
+  border-radius: 5px;
+  box-shadow: 0 140px 40px -140px $color__shadow;
+}
+
+.slider__dots {
+  @include list-reset;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 38px;
+}
+
+.slider__dots-item {
+  margin-right: 7px;
+}
+
+.slider__dot {
+  @include btn-reset;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: block;
+    background-color: transparent;
+    border: 3px solid $color__main;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    border: 6px solid $btn-color__hover;
+    transition: $transition;
+  }
+
+  &--active {
+    cursor: default;
+  }
+
+  &--active::before {
+    border: 3px solid $btn-color__active;
+    transition: $transition;
+  }
+
+  &--active:hover::before {
+    border: 3px solid $btn-color__active;
+    transition: $transition;
+  }
+}
+

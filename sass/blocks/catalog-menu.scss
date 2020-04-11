@@ -1,0 +1,103 @@
+.catalog-menu {
+  position: relative;
+}
+
+.catalog-menu__btn {
+  width: 263px;
+  min-height: 60px;
+  padding-left: 60px;
+  padding-right: 50px;
+  position: relative;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  &::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    background-color: $color__main;
+    left: 17px;
+    box-shadow: 0 8px 0 0 $color__main,
+      0 -8px 0 0 $color__main;
+  }
+}
+
+.catalog-menu__list {
+  @include list-reset;
+  margin-right: 30px;
+  position: absolute;
+  margin-top: 30px;
+  background-color: $color__third;
+  border-radius: 3px;
+  box-shadow: 0 35px 40px -40px $color__shadow;
+}
+
+
+// находится в секции со слайдером, эмулирует появление блока с меню, некая распорка
+.catalog-menu__list-show {
+  margin-left: 293px;
+}
+
+.catalog-menu__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 23px;
+    margin-top: -5px;
+    border: 3px solid $color__second;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    border: 6px solid $text-color__hover;
+    transition: $transition;
+  }
+
+  &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 100%;
+    margin-left: -24px;
+    background-image: url("../../img/menu__arrow-right.png");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transition: $transition;
+  }
+}
+
+.catalog-menu__item:not(:last-child) {
+  border-bottom: 1px solid $color__main;
+}
+
+.catalog-menu__link {
+  width: 263px;
+  height: 46px;
+  padding-left: 62px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $text-color__main;
+
+  &:hover {
+    color: $text-color__hover;
+    transition: $transition;
+  }
+}

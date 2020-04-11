@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: local("Panton Regular"), local("Panton-Regular"),
+    url("../fonts/Panton-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local("Panton SemiBold"), local("Panton-SemiBold"),
+    url("../fonts/Panton-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: local("Panton Bold"), local("Panton-Bold"),
+    url("../fonts/Panton-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: local("Panton ExtraBold"), local("Panton-ExtraBold"),
+      url("Panton-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: local("Panton Black"), local("Panton-Black"),
+      url("Panton-Black.woff") format("woff");
+}

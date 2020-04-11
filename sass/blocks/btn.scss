@@ -1,0 +1,20 @@
+.btn {
+  @include btn-reset;
+  width: 224px;
+  min-height: 55px;
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #0187c1, $btn-color__hover);
+  color: $text-color__second;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background: $btn-color__hover;
+  }
+}

@@ -1,0 +1,76 @@
+.card-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 59px;
+  padding-bottom: 80px;
+  padding-left: 41px;
+}
+
+.card-slide__aside {
+  position: absolute;
+  top: -17px;
+  right: 80px;
+}
+
+.card-slide__header {
+  width: 390px;
+}
+
+.card-slide__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: $text-color__second;
+  text-transform: uppercase;
+}
+
+.card-slide__subtitle {
+  margin: 0;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: $text-color__third;
+}
+
+.card-slide__body {
+  width: 390px;
+  margin-bottom: 25px;
+
+}
+
+.card-slide__price {
+  margin: 0;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: $text-color__second;
+}
+
+.card-slide__footer {
+  width: 390px;
+}
+
+.card-slide__btn {
+  @include btn-reset;
+  width: 174px;
+  min-height: 54px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: $color__second;
+  color: $text-color__second;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color__second--hover;
+  }
+}
